@@ -1,0 +1,28 @@
+{
+  "name": "fairview",
+  "version": "1.0.0",
+  "description": "A responsive WordPress theme based on Grid Layout, Flexbox and SASS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boha-design/fairview.git"
+  },
+  "keywords": [
+    "grid",
+    "layout",
+    "flexbox",
+    "responsive",
+    "sass",
+    "wordpress",
+    "theme"
+  ],
+  "author": "Boha Design",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boha-design/fairview/issues"
+  },
+  "homepage": "https://github.com/boha-design/fairview#readme"
+}
