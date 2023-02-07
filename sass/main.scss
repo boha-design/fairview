@@ -5,3 +5,21 @@
 @import "layout/layout";
 
 @import "elements/elements";
+
+body {
+    margin: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.navigation {
+    background: $back;
+}
+
+.section {
+    background: $secondary;
+}
+
+.footer {
+    background: $success;
+}
