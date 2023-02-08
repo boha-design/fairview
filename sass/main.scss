@@ -7,19 +7,8 @@
 @import "elements/elements";
 
 html, body {
+    background: $back;
     height: 100%;
     margin: 0;
     padding: 0;
-}
-
-.navigation {
-    background: $back;
-}
-
-.section {
-    background: $secondary;
-}
-
-footer {
-    background: $success;
 }
