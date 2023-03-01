@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/boha-design/fairview/issues"
   },
-  "homepage": "https://github.com/boha-design/fairview#readme"
+  "homepage": "https://github.com/boha-design/fairview#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0"
+  }
 }

@@ -1,81 +1,109 @@
 // DESKTOP 
-@media only screen and (min-device-width : 1025px) { 
-  .container {  display: grid;
-    grid-template-columns: 0.15fr 2.9fr 0.15fr;
-    grid-template-rows: 0.2fr 2.4fr 0.4fr;
-    grid-auto-columns: 1fr 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "top_logo top_nav blank"
-      "aside content blank"
-      "aside footer blank";
-  }
-  
-  .top_logo { grid-area: top_logo; }
-  
-  .top_nav { grid-area: top_nav; }
-  
-  .content {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1.5fr 0.5fr 1.3fr 1.4fr 1.3fr 0.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "navbar"
-      "slideshow"
-      "search"
-      "content_actions"
-      "content_article"
-      "content_partners"
-      "content_footer";
-    grid-area: content;
-  }
-  
-  .navbar { grid-area: navbar; }
-  
-  .slideshow { grid-area: slideshow; }
-  
-  .search { grid-area: search; }
-  
-  .content_actions { grid-area: content_actions; }
-  
-  .content_article { grid-area: content_article; }
-  
-  .content_partners { grid-area: content_partners; }
-  
-  .content_footer { grid-area: content_footer; }
-  
-  .footer {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.container {  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 2.3fr 0.5fr;
+  grid-auto-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "site-header"
+    "site-container"
+    "site-footer";
+
+  .site-header {  
+    display: grid;
+    grid-template-columns: 60px auto 60px;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "footer_widget-1 footer_widget-2 copyright";
-    grid-area: footer;
+      "site-header_logo site-header_top .";
+    grid-area: site-header;
+    .site-header_logo { grid-area: site-header_logo; }
+  
+    .site-header_top { grid-area: site-header_top; }
   }
   
-  .footer_widget-1 { grid-area: footer_widget-1; }
+  .site-container {
+    @extend .site-header;
+    grid-template-areas:
+      "sidebar content .";
+    grid-area: site-container;
+
+    .sidebar { grid-area: sidebar; }
   
-  .footer_widget-2 { grid-area: footer_widget-2; }
-  
-  .copyright { grid-area: copyright; }
-  
-  .aside { grid-area: aside; }
-  
-  .blank { grid-area: blank; }
-  
+    .content {  
+      @extend .site-header;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr 2.8fr 0.5fr 0.9fr 0.9fr 0.8fr;
+      grid-template-areas:
+        "navbar navbar navbar"
+        "slide slide slide"
+        "search search search"
+        "section-item section-item section-item"
+        "article article article"
+        "content-footer content-footer content-footer";
+      grid-area: content;
+
+      .navbar { grid-area: navbar; }
+      
+      .slide { grid-area: slide; }
+      
+      .search {
+        @extend .site-header;
+        grid-template-columns: 1.3fr 0.7fr;
+        grid-template-areas:
+          ". .";
+        grid-area: search;
+      }
+      
+      .section-item { 
+        @extend .site-header; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+          ". . .";
+        grid-area: section-item;
+      }
+      
+      .article {
+        @extend .site-header;  
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+          ". . .";
+        grid-area: article;
+      }
+      
+      .content-footer {
+        @extend .site-header;  
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+          ". . .";
+        grid-area: content-footer;
+      }
+    }
+  }  
+      
+  .site-footer {  
+    @extend .site-header;
+    grid-template-areas:
+      ". footer .";
+    grid-area: site-footer;
+
+    .footer {  
+      @extend .site-header;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+        ". . .";
+      grid-area: footer;
+    }
+  }    
 }
 
+
 // TABLET
-@media only screen and (min-device-width : 811px) and (max-device-width : 1024px) { 
-  .aside, .blank { display: none; }
-  }
+
 
 // MOBILE 
-@media only screen and (max-device-width : 810px) {
-  .aside, .blank { display: none; }
- }
 
