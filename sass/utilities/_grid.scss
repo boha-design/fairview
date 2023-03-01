@@ -36,7 +36,7 @@
   
     .content {  
       @extend .site-header;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
       grid-template-rows: 0.5fr 2.8fr 0.5fr 0.9fr 0.9fr 0.8fr;
       grid-template-areas:
         "navbar navbar navbar"
@@ -100,10 +100,4 @@
     }
   }    
 }
-
-
-// TABLET
-
-
-// MOBILE 
 
