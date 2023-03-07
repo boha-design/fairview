@@ -1,0 +1,19 @@
+aside {
+    display: block;
+}
+
+.aside_left {
+    padding-top: 7em;
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding-bottom: 50px;
+        }
+        
+    }
+}

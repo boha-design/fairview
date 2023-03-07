@@ -1,0 +1,46 @@
+header {
+    display: grid;
+    grid-template-columns: 80px auto 60px;
+    grid-template-row: 1fr;
+    grid-template-areas: 
+        "header_logo header_topNav";
+
+        .header_logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: header_logo;
+            position: absolute;
+            background: #fff;
+            box-shadow: 0 0 10px #dbdada;
+            border-bottom-right-radius: 25%;
+            width: 140px;
+            height: 140px;
+            z-index: 101;
+
+            img {
+                width: 100px;
+            }
+        }
+
+        .header_topNav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            grid-area: header_topNav;
+
+            ul {
+                display: flex;
+                align-items: stretch;
+
+                li {
+                    display: flex;
+                    padding-left: 50px;
+
+                    a {
+                        color: #000;
+                    }
+                }
+            }
+        }
+}

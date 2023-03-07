@@ -2,13 +2,6 @@
 
 @import "utilities/utilities";
 
-@import "layout/layout";
-
 @import "elements/elements";
 
-html, body {
-    background: $back;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+@import "layout/layout";
