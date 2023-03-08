@@ -4,7 +4,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 6fr 1fr;
-    height: 100vh;
     grid-template-areas: 
       "header"
       "section"
@@ -22,7 +21,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 80px auto 60px;
-    height: 100vh;
     grid-template-areas: 
       "header"
       "section"
@@ -40,7 +38,6 @@
       display: grid;
       grid-template-columns: 60px auto 60px;
       grid-template-rows: 1fr 6fr 1fr;
-      height: 100vh;
       grid-template-areas: 
         "header header header"
         "aside_left section aside_right"

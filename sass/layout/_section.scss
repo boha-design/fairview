@@ -5,19 +5,24 @@ section{
     .banner {
         display: flex;
 
-        .banner_aside {            
+        .banner_aside {        
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;    
             background: $success;
             box-shadow: 2px 2px 4px #3f3f3f;
+            box-sizing: content-box;
             color: #fff;
             padding: 15px;
-            margin: 8rem -8rem 8rem 0;
+            margin: 6rem -8rem 8rem 0;
             z-index: 100;
 
             h3 {
-                font-size: 2rem;
+                font-size: 3rem;
             }
 
             p {
+                
                 text-align: justify;
             }
         }

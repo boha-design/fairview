@@ -16,8 +16,6 @@ section {
 
     ul {
       display: flex;
-      justify-content: space-around;
-      align-items: flex-end;
 
       li {
         text-align: center;
@@ -27,7 +25,6 @@ section {
         padding: 10px 20px 10px 20px;
 
         &:last-child {
-          // @include button;
           background: $success;
           font-weight: bold;
 
