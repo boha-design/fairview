@@ -1,4 +1,25 @@
 section{
     background: #fff;
     box-shadow: 0 0 15px #f5e1cd;
+
+    .banner {
+        display: flex;
+
+        .banner_aside {            
+            background: $success;
+            box-shadow: 2px 2px 4px #3f3f3f;
+            color: #fff;
+            padding: 15px;
+            margin: 8rem -8rem 8rem 0;
+            z-index: 100;
+
+            h3 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
 }

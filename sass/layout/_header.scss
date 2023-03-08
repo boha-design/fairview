@@ -13,7 +13,7 @@ header {
             position: absolute;
             background: #fff;
             box-shadow: 0 0 10px #dbdada;
-            border-bottom-right-radius: 25%;
+            border-bottom-right-radius: 15%;
             width: 140px;
             height: 140px;
             z-index: 101;
@@ -35,11 +35,8 @@ header {
 
                 li {
                     display: flex;
+                    letter-spacing: 2px;
                     padding-left: 50px;
-
-                    a {
-                        color: #000;
-                    }
                 }
             }
         }
